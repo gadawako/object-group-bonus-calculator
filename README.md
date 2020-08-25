@@ -1,5 +1,15 @@
 # Bonus Calculator App
 
+To-Do
+[] New Employee Function
+    [] Name
+    [] Bonus Calculation Function
+    [] Total Compensation (Base Annual + Bonus)
+    [] Rounded up Bonus
+[] Bonus Calulation Function
+    [] Meet all bonus conditions with conditional statements
+
+
 ## Objectives
 
 - Practice Read, Write, Speak, Teach skills

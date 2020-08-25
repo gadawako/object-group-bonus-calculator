@@ -40,4 +40,14 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
+// function bonusCalculator(object){
+
+//if rating is <= 2 --no bonus
+//else if rating <= 3 
+//else if rating <= 3 4% bonus
+// else if rating <= 4 6% 
+//else if rating <= 5 10% 
+
+//if employeenumber.length 
+
 console.log( employees );
