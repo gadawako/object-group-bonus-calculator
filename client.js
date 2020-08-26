@@ -4,31 +4,31 @@ const employees = [
     employeeNumber: '2405',
     annualSalary: '47000',
     reviewRating: 3
-  },
+  }, //bonus should be 9
   {
     name: 'Jem',
     employeeNumber: '62347',
     annualSalary: '63500',
     reviewRating: 4
-  },
+  },//bonus should be 6
   {
     name: 'Scout',
     employeeNumber: '6243',
     annualSalary: '74750',
     reviewRating: 5
-  },
+  },//bonus should be 13
   {
     name: 'Robert',
     employeeNumber: '26835',
     annualSalary: '66000',
     reviewRating: 1
-  },
+  }, //bonus should be 0
   {
     name: 'Mayella',
     employeeNumber: '89068',
     annualSalary: '35000',
     reviewRating: 1
-  }
+  } //bonus should be 0
 ];
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
@@ -64,15 +64,15 @@ function bonusCalculator(people){
     console.log("in people.reviewRating === 5");
 
   } // end if: 5
-  else if(people.employeeNumber.length === 4){
+  if(people.employeeNumber.length === 4){
     bonusPercentage += 5;
     console.log("in if Number(people.employeeNumber.length) === 4");
   }
-  else if(Number(people.annualSalary) > 65000 ){
+  if(Number(people.annualSalary) > 65000 ){
     bonusPercentage -= 1;
     console.log("in Number(people.annualSalary) > 65000");
   }
-  else if( bonusPercentage > 13 ){
+  if( bonusPercentage > 13 ){
     bonusPercentage = 13;
     console.log("in bonusPercentage > 13");
   }
@@ -88,6 +88,7 @@ console.log(bonusCalculator( employees[0] ));
 console.log(bonusCalculator( employees[1] ));
 console.log(bonusCalculator( employees[2] ));
 console.log(bonusCalculator( employees[3] ));
+console.log(bonusCalculator( employees[4] ));
 
 //if employeenumber.length 
 // if employee.salary >= 65000, subtract 1 from bonus percentage
