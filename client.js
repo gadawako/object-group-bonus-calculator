@@ -41,48 +41,45 @@ const employees = [
 // Ask questions when you don't.
 
 function bonusCalculator(people){
-  let bonusPercentage = 0;
-  for( people of employees ){
-    //if rating is <= 2 add 0 to bonus percentage 
-    if( people.reviewRating <= 2 ){
-      bonusPercentage += 0;
-      console.log("in if people.reviewRating <= 2");
-    } // end if: 2
+  let bonusPercentage = 0;    //if rating is <= 2 add 0 to bonus percentage 
+  if( people.reviewRating <= 2 ){
+     bonusPercentage += 0;
+    console.log("in if people.reviewRating <= 2");
+  } // end if: 2
 
     //else if rating <= 3 add 4 to bonus percentage 
-    else if( people.reviewRating === 3 ){
-      bonusPercentage += 4;
-      console.log("in if people.reviewRating === 3");
-    } // end if: 3
+  else if( people.reviewRating === 3 ){
+    bonusPercentage += 4;
+    console.log("in if people.reviewRating === 3");
+  } // end if: 3
     
     // else if rating <= 4  add 6 o bonus percentage
-    else if( people.reviewRating === 4 ){
-      bonusPercentage += 6;
-      console.log("in if people.reviewRating === 4");
-    } // end if: 4
+  else if( people.reviewRating === 4 ){
+    bonusPercentage += 6;
+    console.log("in if people.reviewRating === 4");
+  } // end if: 4
     //else if rating <= 5 add 10 to bonus percentage
-    else if( people.reviewRating === 5 ){
-      bonusPercentage += 10;
-      console.log("in people.reviewRating === 5");
+  else if( people.reviewRating === 5 ){
+    bonusPercentage += 10;
+    console.log("in people.reviewRating === 5");
 
-    } // end if: 5
-    else if(  Number(people.employeeNumber.length) === 4){
-      bonusPercentage += 5;
-      console.log("in if Number(people.employeeNumber.length) === 4");
-    }
-    else if( Number(people.annualSalary) > 65000 ){
-      bonusPercentage -= 1;
-      console.log("in Number(people.annualSalary) > 65000");
-    }
-    else if( bonusPercentage > 13 ){
-      bonusPercentage = 13;
-      console.log("in bonusPercentage > 13");
-    }
-    else if( bonusPercentage < 0 ){
-      bonusPercentage = 0;
-      console.log("in bonusPercentage < 0");
-    }
-  } // end for
+  } // end if: 5
+  else if(people.employeeNumber.length === 4){
+    bonusPercentage += 5;
+    console.log("in if Number(people.employeeNumber.length) === 4");
+  }
+  else if(Number(people.annualSalary) > 65000 ){
+    bonusPercentage -= 1;
+    console.log("in Number(people.annualSalary) > 65000");
+  }
+  else if( bonusPercentage > 13 ){
+    bonusPercentage = 13;
+    console.log("in bonusPercentage > 13");
+  }
+  else if( bonusPercentage < 0 ){
+    bonusPercentage = 0;
+    console.log("in bonusPercentage < 0");
+  }
   console.log( "this employee gets a " + bonusPercentage + "% bonus!")
   return bonusPercentage;
 } // end bonusCalculator 
