@@ -3,7 +3,7 @@
 To-Do
 [] New Employee Function
     [] Name
-    [] Bonus Calculation Function
+    [x] Bonus Calculation Function
     [] Total Compensation (Base Annual + Bonus)
     [] Rounded up Bonus
 [] Bonus Calulation Function
