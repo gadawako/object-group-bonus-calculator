@@ -6,8 +6,8 @@ To-Do
     [x] Bonus Calculation Function
     [] Total Compensation (Base Annual + Bonus)
     [] Rounded up Bonus
-[] Bonus Calulation Function
-    [] Meet all bonus conditions with conditional statements
+[x] Bonus Calulation Function
+    [x] Meet all bonus conditions with conditional statements
 
 
 ## Objectives
